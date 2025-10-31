@@ -8,54 +8,12 @@ body {
     box-sizing: border-box;
 }
 
-/* HEADER SECTION (unchanged) */
-header {
-    background-color: black;
-    animation-name: changer;
-    animation-duration: 4s;
-    animation-delay: 2s;
-    animation-iteration-count: infinite;
-}
-@keyframes changer {
-    from { background-color: darkblue; }
-    to { background-color: black; }
+.article-hero{
+    padding: 16px 10px;
 }
 
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 8px 20px;
-    color: white;
-}
-.logo {
-    font-weight: bold;
-    font-size: 1.5rem;
-}
-.menu {
-    border: solid rgba(255, 255, 255, 0.582);
-    padding: 10px;
-    border-radius: 10px;
-}
-.menu a {
-    color: white;
-    text-decoration: none;
-    margin: 1rem;
-    font-size: 20px;
-}
-.menu a:hover {
-    color: darkblue;
-}
-.LOGINbtn {
-    background-color: green;
-    color: white;
-    border: none;
-    border-radius: 20px;
-    padding: 10px 20px;
-    cursor: pointer;
-}
-.LOGINbtn:hover {
-    background-color: darkgreen;
+.articles-section{
+    padding: 13px;
 }
 
 /* ARTICLE SECTION */
@@ -67,6 +25,7 @@ nav {
     border-radius: 20px;
     box-shadow: 0 0 15px rgba(0,0,0,0.2);
     animation: fadeIn 1s ease-in-out;
+    padding: 10px;
 }
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(30px); }
@@ -97,12 +56,5 @@ nav {
     font-style: italic;
     color: #333;
     border-radius: 5px;
+    padding: 10px;
 }
-
-/* FOOTER (consistent with site theme) */
-footer {
-    background-color: wheat;
-    text-align: center;
-    padding: 20px;
-    color: #222;
-    margi
