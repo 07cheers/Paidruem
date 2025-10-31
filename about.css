@@ -1,0 +1,108 @@
+/* GENERAL STYLES (keeps theme consistent) */
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+    color: #111;
+    box-sizing: border-box;
+}
+
+/* HEADER SECTION (unchanged) */
+header {
+    background-color: black;
+    animation-name: changer;
+    animation-duration: 4s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes changer {
+    from { background-color: darkblue; }
+    to { background-color: black; }
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 20px;
+    color: white;
+}
+.logo {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.menu {
+    border: solid rgba(255, 255, 255, 0.582);
+    padding: 10px;
+    border-radius: 10px;
+}
+.menu a {
+    color: white;
+    text-decoration: none;
+    margin: 1rem;
+    font-size: 20px;
+}
+.menu a:hover {
+    color: darkblue;
+}
+.LOGINbtn {
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.LOGINbtn:hover {
+    background-color: darkgreen;
+}
+
+/* ARTICLE SECTION */
+.read {
+    max-width: 900px;
+    margin: 50px auto;
+    background-color: white;
+    padding: 40px 60px;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    animation: fadeIn 1s ease-in-out;
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+.read h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    color: darkblue;
+    margin-bottom: 20px;
+}
+.read p {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    color: #333;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+.read img {
+    width: 100%;
+    border-radius: 15px;
+    margin: 20px 0;
+}
+.read blockquote {
+    background-color: #f4f4f4;
+    border-left: 5px solid darkblue;
+    padding: 15px;
+    font-style: italic;
+    color: #333;
+    border-radius: 5px;
+}
+
+/* FOOTER (consistent with site theme) */
+footer {
+    background-color: wheat;
+    text-align: center;
+    padding: 20px;
+    color: #222;
+    margi
